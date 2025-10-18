@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>¡Hola PHP desde Docker!</title>
     <style>
         body {
