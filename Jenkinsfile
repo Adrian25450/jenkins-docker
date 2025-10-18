@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-cred')
-        IMAGE_NAME = "adrian25450/jenkins-docker"
+        IMAGE_NAME = "adrian0526/php-simple-app"
     }
 
     stages {
@@ -38,10 +38,10 @@ pipeline {
             sh 'docker system prune -f || true'
         }
         success {
-            echo "Pipeline completado con éxito"
+            echo "✅ Pipeline completado con éxito"
         }
         failure {
-            echo "Pipeline falló"
+            echo "❌ Pipeline falló"
         }
     }
 }
